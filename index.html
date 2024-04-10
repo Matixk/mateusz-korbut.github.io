@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mateusz Korbut Portfolio</title>
+    <meta name="description"
+          content="Web Developer passionate about creating web solutions that drive results. I can help you achieve your online goals.">
+
+    <meta property="og:title" content="Mateusz Korbut Portfolio">
+    <meta property="og:type" content="website"/>
+    <meta property="og:description"
+          content="Web Developer passionate about creating web solutions that drive results. I can help you achieve your online goals.">
+    <meta property="og:url" content="https://mateusz-korbut.github.io">
+    <meta property="og:image" content="https://mateusz-korbut.github.io/static/images/profile.webp">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" href="static/stylesheet.min.css" as="style" />
+    <link rel="stylesheet" href="static/stylesheet.min.css">
+    <script src="static/index.min.js" defer></script>
+</head>
+<body class="text-white">
+<header>
+    <button id="toggle-nav-btn" class="pointer rounded-full" aria-label="Open navigation" aria-controls="nav"
+            onclick="toggleNavbar()">
+        <img src="static/icons/menu.webp" alt="Open navigation icon" width="34" height="34" fetchpriority="low">
+    </button>
+
+    <nav id="nav" class="absolute p-3.5 rounded-full">
+        <ul class="flex flex-col md:flex-row items-center gap-4">
+            <li>
+                <a class="text-xl hover:text-shadow" href="#about">About</a>
+            </li>
+            <li>
+                <a class="text-xl hover:text-shadow" href="#skills">Skills</a>
+            </li>
+            <li>
+                <a class="text-xl hover:text-shadow" href="#experience">Experience</a>
+            </li>
+            <li>
+                <a class="text-xl hover:text-shadow" href="#tech-stack">Tech stack</a>
+            </li>
+            <li>
+                <a class="text-xl hover:text-shadow" href="#projects">Projects</a>
+            </li>
+            <li>
+                <a class="text-xl hover:text-shadow" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="text-center sm:text-unset">
+    <article id="about" class="flex wrap justify-center sm:justify-start">
+        <div id="profile-pic" class="flex md:mx-left justify-center items-center">
+            <img src="static/images/profile.webp" alt="My profile picture" decoding="async" fetchpriority="high"
+                 width="285" height="285"/>
+        </div>
+
+        <div>
+            <section class="relative">
+                <img id="arrow" class="absolute hidden md:block" src="static/images/arrow.webp"
+                     alt="Arrow pointing from welcome message to my profile picture" decoding="async" width="80"
+                     height="49" fetchpriority="low"/>
+
+                <h2 id="name" class="text-2xl font-medium">
+                    Hello! I am <b>Mateusz Korbut</b>
+                </h2>
+            </section>
+
+            <section class="relative">
+                <img id="ellipse" class="absolute" src="static/images/ellipse.webp"
+                     alt="Background highlight Developer keyword" decoding="async" width="295" height="141"
+                     fetchpriority="low"/>
+
+                <h1 id="title" class="text-4xl font-medium">A Web Developer</h1>
+            </section>
+
+            <section id="links" class="flex justify-center items-center wrap gap-1.5">
+                <a class="btn-primary text-white rounded-3xl p-3" href="static/cv.pdf" target="_blank"
+                   rel="noopener noreferrer" aria-label="Download my CV in PDF format">
+                    Download CV
+
+                    <img class="ml-1" src="static/icons/save.webp" alt="Download CV icon" width="16" height="14"
+                         decoding="async"
+                         fetchpriority="high"/>
+                </a>
+
+                <a class="btn-primary text-white rounded-3xl flex p-2" href="https://www.linkedin.com/in/mateusz-korbut"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <img src="static/logos/linkedin.png" alt="Linkedin logo" width="14" height="14" decoding="async"
+                         fetchpriority="high"/>
+                </a>
+
+                <a class="btn-primary text-white rounded-3xl flex p-2" href="https://github.com/mateusz-korbut" target="_blank"
+                   rel="noopener noreferrer">
+                    <img src="static/logos/github.webp" alt="GitHub logo" width="14" height="14" decoding="async"
+                         fetchpriority="high"/>
+                </a>
+            </section>
+        </div>
+
+        <section class="flex items-center wrap">
+            <h2 class="text-3xl font-medium mb-4">I'm a Full-stack developer</h2>
+
+            <p class="text-2xl">
+                Currently working at
+                <a class="hover:text-shadow" href="https://prowly.com" target="_blank" rel="noopener noreferrer">
+                    Prowly
+                </a>
+                a
+                <a class="hover:text-shadow" href="https://semrush.com" target="_blank" rel="noopener noreferrer">
+                    Semrush Company
+                </a>
+                as a Tech Team Leader,
+            </p>
+
+            <p class="text-xl">
+                My coding journey began during high school, and I further honed my skills by combining studies with
+                a year-long programming course. Then in May 2019, I entered the Software Developer position in a product
+                company, where one of my notable achievements was creating a
+                <a class="hover:text-shadow" href="https://mdbootstrap.com/snippets?search=react" target="_blank"
+                   rel="noopener noreferrer">
+                    React online compiler
+                </a>.
+                I then transitioned to developing impactful web applications for
+                <a class="hover:text-shadow" href="https://pl.asseco.com/" target="_blank"
+                   rel="noopener noreferrer">
+                    Asseco
+                </a>
+                and
+                <a class="hover:text-shadow" href="https://www.gov.pl/web/sprawiedliwosc" target="_blank"
+                   rel="noopener noreferrer">
+                    Ministry of Justice
+                </a>
+                improving the online experience for millions of Polish citizens. Currently, at
+                <a class="hover:text-shadow" href="https://prowly.com" target="_blank" rel="noopener noreferrer">
+                    Prowly
+                </a>
+                lead a team of 6 people and build a comprehensive tool that tracks keywords across diverse online
+                sources, including social media, radio, TV, print, and podcasts.
+            </p>
+        </section>
+    </article>
+
+    <article id="skills" class="flex flex-col md:flex-row justify-center items-center">
+        <section class="flex flex-col bg-gray">
+            <img class="mt-auto p-6" src="static/images/design.webp" alt="Woman drawing a paper" decoding="async"
+                 width="250" height="140"
+                 fetchpriority="low"/>
+
+            <h2 class="text-xl text-center mt-auto p-3.5">Designs</h2>
+        </section>
+
+        <section class="flex flex-col">
+            <img class="mt-auto p-6" src="static/images/web-development.webp" alt="HTML CSS JavaScript logos in browser"
+                 decoding="async"
+                 width="250"
+                 height="190"
+                 fetchpriority="low"/>
+
+            <h2 class="text-xl text-center mt-auto p-3.5">Web development</h2>
+        </section>
+
+        <section class="flex flex-col bg-gray">
+            <img class="mt-auto p-6" src="static/images/mentoring.webp" alt="Two people coding" decoding="async"
+                 width="250"
+                 height="165"
+                 fetchpriority="low"/>
+
+            <h2 class="text-xl text-center mt-auto p-3.5">Mentoring</h2>
+        </section>
+    </article>
+
+    <div id="experience" class="md:flex wrap gap-4">
+        <article class="experience__article">
+            <h2 class="text-3xl font-medium mb-4">Experience</h2>
+
+            <section class="experience__article__section grid p-3.5 mb-4 gap-4 border-white rounded-2xl">
+                <img class="self-center mr-2" src="static/logos/prowly.webp" alt="Prowly logo" width="60" height="22"
+                     decoding="async" fetchpriority="low"/>
+
+                <div class="text-white">
+                    <h3 class="text-md md:text-lg line-clamp-2" title="Tech Team Leader Full-stack developer">
+                        Tech Team Leader <br/>
+                        Full-stack developer
+                    </h3>
+
+                    <p class="text-sm opacity-4/5">Jun 2021 - Present</p>
+                </div>
+
+                <a class="btn-primary text-white rounded-3xl self-center" href="https://www.prowly.com" target="_blank"
+                   rel="noopener noreferrer">
+                    <img src="static/icons/arrow.webp" alt="Link to prowly.com" width="19" height="19"
+                         decoding="async" fetchpriority="low"/>
+                </a>
+            </section>
+
+            <section class="experience__article__section grid p-3.5 mb-4 gap-4 border-white rounded-2xl">
+                <img class="self-center mr-2" src="static/logos/moovem.webp" alt="Moovem logo" width="60" height="12"
+                     decoding="async" fetchpriority="low"/>
+
+                <div class="text-white">
+                    <h3 class="text-md md:text-lg line-clamp-2">Full-stack developer</h3>
+
+                    <p class="text-sm opacity-4/5">Oct 2019 - May 2021</p>
+                </div>
+
+                <a class="btn-primary text-white rounded-3xl self-center" href="https://www.moovem.pl" target="_blank"
+                   rel="noopener noreferrer">
+                    <img src="static/icons/arrow.webp" alt="Link to moovem.com" width="19" height="19"
+                         decoding="async" fetchpriority="low"/>
+                </a>
+            </section>
+
+            <section class="experience__article__section grid p-3.5 mb-4 gap-4 border-white rounded-2xl">
+                <img class="self-center mr-2" src="static/logos/mdb.webp" alt="MDBootstrap logo" width="73"
+                     height="26" decoding="async" fetchpriority="low"/>
+
+                <div class="text-white">
+                    <h3 class="text-md md:text-lg line-clamp-2">Backend developer</h3>
+
+                    <p class="text-sm opacity-4/5">May 2019 - Oct 2019</p>
+                </div>
+
+                <a class="btn-primary text-white rounded-3xl self-center" href="https://mdbootstrap.com"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <img src="static/icons/arrow.webp" alt="Link to mbd.com" width="19" height="19"
+                         decoding="async" fetchpriority="low"/>
+                </a>
+            </section>
+        </article>
+
+        <article class="experience__article">
+            <h2 class="text-3xl font-medium mb-4">Education</h2>
+
+            <section class="experience__article__section grid p-3.5 mb-4 gap-4 border-white rounded-2xl">
+                <img class="self-center mr-2" src="static/logos/uph.webp" alt="University of Siedlce logo" width="40"
+                     height="47" decoding="async" fetchpriority="low"/>
+
+                <div class="text-white">
+                    <h3 class="text-md md:text-lg line-clamp-2" title="Computer science Bachelor of Engineering">
+                        Computer science <br/>
+                        Bachelor of Engineering
+                    </h3>
+
+                    <p class="text-sm opacity-4/5">2016 - 2021</p>
+                </div>
+
+                <a class="btn-primary text-white rounded-3xl self-center" href="https://www.uws.edu.pl" target="_blank"
+                   rel="noopener noreferrer">
+                    <img src="static/icons/arrow.webp" alt="Link to University of Siedlce" width="19" height="19"
+                         decoding="async" fetchpriority="low"/>
+                </a>
+            </section>
+
+            <section class="experience__article__section grid p-3.5 mb-4 gap-4 border-white rounded-2xl">
+                <img class="self-center mr-2" src="static/logos/codecool.webp" alt="Codecool logo" width="32"
+                     height="32" decoding="async" fetchpriority="low"/>
+
+                <div class="text-white">
+                    <h3 class="text-md md:text-lg line-clamp-2" title="Full-stack developer course">
+                        Full-stack developer <br/>
+                        course
+                    </h3>
+
+                    <p class="text-sm opacity-4/5">2018 - 2019</p>
+                </div>
+
+                <a class="btn-primary text-white rounded-3xl self-center" href="https://codecool.com" target="_blank"
+                   rel="noopener noreferrer">
+                    <img src="static/icons/arrow.webp" alt="Link to Codecool" width="19" height="19"
+                         decoding="async" fetchpriority="low"/>
+                </a>
+            </section>
+
+            <img src="static/images/cert.webp" class="flex ml-auto" alt="Certificate illustration" width="150"
+                 height="181"
+                 decoding="async" fetchpriority="low"/>
+        </article>
+    </div>
+
+    <article id="tech-stack">
+        <h2 class="text-3xl font-medium mb-4">Tech stack</h2>
+
+        <div class="tech-stack__grid flex wrap relative text-center">
+            <section class="flex flex-col justify-between border-white rounded-full"
+                     style="grid-area: ts; background-image: url('static/logos/typescript.webp')">
+                <h3 class="text-2xl">
+                    TypeScript
+                </h3>
+                <p class="w-1/2 self-center">
+                    TypeScript is my go-to language for building applications. I possess a deep understanding of its
+                    core principles and can confidently leverage advanced features to write clean, maintainable, and
+                    efficient code.
+                </p>
+                <p class="text-sm text-end">
+                    4+ years experience
+                </p>
+            </section>
+            <section class="flex flex-col justify-between border-white rounded-full"
+                     style="grid-area: js; background-image: url('static/logos/javascript.webp')">
+                <h3 class="text-2xl">
+                    JavaScript
+                </h3>
+                <p>
+                    Since 2016 I create and work with this language. I leverage advanced JavaScript features, design
+                    patterns, and frameworks to craft performant and scalable web applications.
+                </p>
+                <p class="text-sm text-end">
+                    8+ years experience
+                </p>
+            </section>
+            <section class="flex flex-col justify-between border-white rounded-full"
+                     style="grid-area: nodejs; background-image: url('static/logos/nodejs.webp')">
+                <h3 class="text-2xl">
+                    Node.js
+                </h3>
+                <p class="self-center">
+                    I chose Node.js for my Angular and NestJS projects due to its efficient scalability and performance.
+                    It allows me to unify my development stack, streamlining both client and server-side code.
+                </p>
+                <p class="text-sm text-end">
+                    5+ years experience
+                </p>
+            </section>
+            <section class="flex flex-col justify-between border-white rounded-full"
+                     style="grid-area: ng; background-image: url('static/logos/angular.webp')">
+                <h3 class="text-2xl">
+                    Angular
+                </h3>
+                <p>
+                    Comprehensive framework for complex applications empower me to build robust single-page
+                    applications.
+                </p>
+                <p class="text-sm text-end">
+                    5+ years experience
+                </p>
+            </section>
+            <section class="flex flex-col justify-between border-white rounded-full"
+                     style="grid-area: nestjs; background-image: url('static/logos/nestjs.webp')">
+                <h3 class="text-2xl">
+                    Nest.js
+                </h3>
+                <p>
+                    Backend framework perfectly complementing my frontend development skills.
+                </p>
+                <p class="text-sm text-end">
+                    2+ years experience
+                </p>
+            </section>
+            <section class="flex flex-col justify-between border-white rounded-full"
+                     style="grid-area: tw; background-image: url('static/logos/tailwind.webp')">
+                <h3 class="text-2xl">
+                    Tailwind
+                </h3>
+                <p>
+                    My choice for rapid UI development of beautiful and maintainable websites.
+                </p>
+                <p class="text-sm text-end">
+                    2+ years experience
+                </p>
+            </section>
+            <section class="flex flex-col justify-between border-white rounded-full"
+                     style="grid-area: pg; background-image: url('static/logos/postgres.webp')">
+                <h3 class="text-2xl">
+                    Postgres
+                </h3>
+                <p>
+                    I know how to design SQL database ensuring data integrity and flexibility in any project.
+                </p>
+                <p class="text-sm text-end">
+                    6+ years experience
+                </p>
+            </section>
+            <section class="flex flex-col justify-between border-white rounded-full"
+                     style="grid-area: docker; background-image: url('static/logos/docker.webp')">
+                <h3 class="text-2xl">
+                    Docker
+                </h3>
+                <p>
+                    Experienced in Docker for efficient application deployment and container management.
+                </p>
+                <p class="text-sm text-end">
+                    4+ years experience
+                </p>
+            </section>
+        </div>
+    </article>
+
+    <article id="projects">
+        <h2 class="text-3xl font-medium mb-4">Projects</h2>
+
+        <section class="flex flex-col items-center md:flex-row-reverse mt-16">
+            <div class="project__image project__image_reverse w-fit">
+                <img class="rounded-2xl"
+                     src="static/images/monitoring-524w.webp"
+                     sizes="(max-width: 490px) 250px, 524px"
+                     srcset="static/images/monitoring-250w.webp 250w, static/images/monitoring-524w.webp 524w"
+                     alt="Monitoring application preview" decoding="async" fetchpriority="low">
+            </div>
+
+            <div class="mt-6 text-start">
+                <a class="hover:text-shadow" href="https://prowly.com/media-monitoring" target="_blank"
+                   rel="noopener noreferrer">
+                    <h2 class="text-2xl text-white font-medium">Media Monitoring</h2>
+                </a>
+
+                <p class="project__description p-6 relative text-lg rounded-2xl">
+                    Developed a comprehensive module that tracks mentions across the web and social media.
+                    This module empowers users with insightful dashboards and automated email notifications,
+                    enabling them to stay on top of mention sentiment and audience engagement.
+                </p>
+
+                <p class="flex gap-1.5">
+                    <img src="static/logos/angular-32.webp" alt="Angular  logo" title="Angular"
+                         width="32" height="32" decoding="async" fetchpriority="low">
+
+                    <img src="static/logos/nestjs-32.webp" alt="NestJS logo" title="NestJS"
+                         width="32" height="32" decoding="async" fetchpriority="low">
+
+                    <img src="static/logos/postgres-32.webp" alt="Postgres logo" title="Postgres"
+                         width="32" height="34" decoding="async" fetchpriority="low">
+                </p>
+            </div>
+        </section>
+
+        <section class="flex flex-col items-center md:flex-row mt-16 text-end">
+            <div class="project__image w-fit">
+                <img class="rounded-2xl"
+                     src="static/images/krs-464w.webp"
+                     sizes="(max-width: 490px) 250px, 464px"
+                     srcset="static/images/krs-256w.webp 256w, static/images/krs-464w.webp 464w"
+                     alt="KRS application preview" decoding="async" fetchpriority="low">
+            </div>
+
+            <div class="mt-6">
+                <a class="hover:text-shadow" href="https://prs.ms.gov.pl/krs" target="_blank"
+                   rel="noopener noreferrer">
+                    <h2 class="text-2xl text-white font-medium">e-form KRS</h2>
+                </a>
+
+                <p class="project__description p-6 relative text-lg rounded-2xl">
+                    Project for creating and sending official applications to the Ministry of Justice. My role was
+                    to collaborate with other teams, analytics, support of developers and testers. From programming
+                    side design of the project architecture and code development.
+                </p>
+
+                <p class="flex justify-end gap-1.5">
+                    <img src="static/logos/angular-32.webp" alt="Angular  logo" title="Angular"
+                         width="32" height="32" decoding="async" fetchpriority="low">
+
+                    <img src="static/logos/dotnet-32.webp" alt=".NET Core  logo" title=".NET Core"
+                         width="32" height="32" decoding="async" fetchpriority="low">
+
+                    <img src="static/logos/mssql-32.webp" alt="Microsoft SQL Server  logo" title="Microsoft SQL Server"
+                         width="32" height="32" decoding="async" fetchpriority="low">
+                </p>
+            </div>
+        </section>
+
+        <section class="flex flex-col items-center md:flex-row-reverse mt-16 text-start">
+            <div class="project__image project__image_reverse w-fit">
+                <img class="rounded-2xl"
+                     src="static/images/snippets-497w.webp"
+                     sizes="(max-width: 490px) 250px, 497px"
+                     srcset="static/images/snippets-250w.webp 250w, static/images/snippets-497w.webp 497w"
+                     alt="Snippets application preview" decoding="async" fetchpriority="low">
+            </div>
+
+            <div class="mt-6">
+                <a class="hover:text-shadow" href="https://mdbootstrap.com/snippets" target="_blank"
+                   rel="noopener noreferrer">
+                    <h2 class="text-2xl text-white font-medium">Snippets</h2>
+                </a>
+
+                <p class="project__description p-6 relative text-lg rounded-2xl">
+                    Live code editor with compiler and built-in MDBootstrap framework.
+                    I was creating the React compiler, and other functionalities like code formatting.
+                </p>
+
+                <p class="flex gap-1.5">
+                    <img src="static/logos/angular-32.webp" alt="Angular logo" title="Angular"
+                         width="32" height="32" decoding="async" fetchpriority="low">
+
+                    <img src="static/logos/nodejs-32.webp" alt="Node.JS  logo" title="Node.JS"
+                         width="27" height="32" decoding="async" fetchpriority="low">
+                </p>
+            </div>
+        </section>
+    </article>
+
+    <article id="contact" class="flex wrap md:no-wrap rounded-2xl relative">
+        <img class="absolute" src="static/images/contact.webp" alt="Contact" width="125" height="280"
+             decoding="async" fetchpriority="low">
+
+        <section class="flex flex-col">
+            <h2 class="text-2xl font-medium">Get in touch</h2>
+
+            <p>
+                I enjoy mentoring others and sharing my experience.
+                Don't hesitate to contact me if you're interested in working together or learning more!
+            </p>
+
+            <div class="flex items-center mt-3">
+                <div class="bg-gray flex p-2.5 rounded-full mr-2">
+                    <img src="static/icons/email.webp" alt="Email" width="20" height="20"
+                         decoding="async" fetchpriority="low">
+                </div>
+
+                <a class="text-white" href="mailto:mateuszkorbut0@gmail.com">mateuszkorbut0@gmail.com</a>
+            </div>
+
+            <div class="flex items-center mt-3">
+                <div class="bg-gray flex p-2.5 rounded-full mr-2">
+                    <img src="static/icons/location.webp" alt="Location" width="20" height="20"
+                         decoding="async" fetchpriority="low">
+                </div>
+
+                <p class="text-white">
+                    Warsaw
+                </p>
+            </div>
+        </section>
+
+        <form class="flex flex-col gap-4 w-full" action="https://formspree.io/f/xqkrjkjp" method="POST">
+            <h2 class="text-2xl font-medium">Send me a message</h2>
+
+            <div class="contact__input-container w-full mt-3 bg-gray relative rounded-xl">
+                <input id="email" class="contact__input w-full text-md text-white" type="email" name="email" required/>
+                <label for="email" class="absolute">Email</label>
+            </div>
+
+            <div class="contact__input-container w-full mt-3 bg-gray relative rounded-xl">
+                <textarea id="message" class="contact__input w-full text-md text-white" name="message" rows="8"
+                          required></textarea>
+                <label for="message" class="absolute">Message</label>
+            </div>
+
+            <button class="contact__button text-white w-fit flex items-center p-3 pointer rounded-xl" type="submit">
+                Send message
+
+                <img class="ml-1" src="static/icons/send.webp" alt="Send icon" width="16" height="16"
+                     decoding="async" fetchpriority="low"/>
+            </button>
+        </form>
+    </article>
+</main>
+</body>
+</html>
